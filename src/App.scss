@@ -81,3 +81,31 @@
   transform: translate(-50%, -50%);
   width: 100px
 }
+
+.app__signIn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.MuiBackdrop-root {
+  background-color: #181818 !important;
+}
+
+#form-dialog-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    display: flex;
+    align-items: center;
+  }
+
+  svg {
+    margin-right: 0.5rem;
+    fill: #0b81ff !important
+  }
+}

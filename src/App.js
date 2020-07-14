@@ -8,6 +8,7 @@ import firebase from "firebase";
 import db from "./firebase";
 import FlipMove from "react-flip-move";
 import Shrug from "./shrug.png";
+import SignIn from "./SignIn";
 
 function App() {
   const messagesEndRef = useRef(null);
@@ -32,9 +33,9 @@ function App() {
       });
   }, []);
 
-  useEffect(() => {
-    setUsername(prompt("Please enter your name"));
-  }, []);
+  // useEffect(() => {
+  //   setUsername(prompt("Please enter your name"));
+  // }, []);
 
   const sendMessage = (e) => {
     e.preventDefault();
@@ -50,6 +51,7 @@ function App() {
 
   return (
     <div className="App">
+      <SignIn onChange={(value) => setUsername(value)} />
       <div className="app__header">
         <WhatsAppIcon className="app__Icon" />
         <div className="app__headerText">
