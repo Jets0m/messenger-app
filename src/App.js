@@ -60,7 +60,7 @@ function App() {
 
       <FlipMove className="app__messages">
         {messages.length === 0 ? (
-          <img className="app__noMessagesIcon" src={Shrug} />
+          <img className="app__noMessagesIcon" src={Shrug} alt="No messages" />
         ) : null}
         {messages.map(({ message, id }) => (
           <Message key={id} username={username} message={message} />
